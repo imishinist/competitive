@@ -16,4 +16,6 @@ clang++ -Wall -O2 main.cpp
 runtest input1 output1
 runtest input2 output2
 runtest input3 output3
+runtest input4 output4
+runtest input5 output5
 echo "OK"
