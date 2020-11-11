@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+runtest() {
+    ./a.out < "$1" > result
+    if [ "$(cat result)" != "$(cat $2)" ]; then
+        echo "$1: $(cat $2) expected, but got $(cat result)"
+        exit 1
+    fi
+    echo "test case #$1 => $(cat result)"
+}
+
+clang++ -Wall -O2 main.cpp
+
+runtest input1 output1
+runtest input2 output2
+runtest input3 output3
+echo "OK"
