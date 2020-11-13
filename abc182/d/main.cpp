@@ -1,9 +1,9 @@
-#include <cstdio>
-#include <iostream>
-#include <vector>
-#include <map>
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -24,8 +24,7 @@ int main() {
         if (max < num) {
             max = num;
         }
-        if (ans < sum + max)
-            ans = sum + max;
+        if (ans < sum + max) ans = sum + max;
         sum += num;
     }
     cout << ans << endl;

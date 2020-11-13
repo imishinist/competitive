@@ -1,6 +1,6 @@
-#include <vector>
-#include <iostream>
 #include <algorithm>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -11,14 +11,13 @@ bool have_negative(vector<int> counts) {
     return false;
 }
 
-
 int main() {
     string s;
     cin >> s;
     vector<int> counts = vector<int>(10);
     for (int i = 0; i < s.size(); i++) {
         char c = s[i];
-        counts[c-'0']++;
+        counts[c - '0']++;
     }
 
     if (s.size() == 1) {
@@ -51,6 +50,6 @@ int main() {
         counts[i]++;
     }
     puts("No");
-    
+
     return 0;
 }

@@ -1,9 +1,9 @@
-#include <cstdio>
-#include <iostream>
-#include <vector>
-#include <map>
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -36,7 +36,7 @@ int main() {
 
     for (int y = 0; y < h; y++) {
         bool illuminatedRight = false;
-        bool illuminatedLeft= false;
+        bool illuminatedLeft = false;
         // 横方向
         for (int x = 0; x < w; x++) {
             int lx = w - x - 1, ly = h - y - 1;
@@ -52,7 +52,7 @@ int main() {
             if (blocks[ly][lx]) {
                 illuminatedLeft = false;
             }
-            
+
             if (illuminatedRight) {
                 board[y][x] += 1;
             }
@@ -79,7 +79,7 @@ int main() {
             if (blocks[ly][lx]) {
                 illuminatedUp = false;
             }
-            
+
             if (illuminatedDown) {
                 board[y][x] += 1;
             }
@@ -98,7 +98,6 @@ int main() {
         }
     }
     cout << cnt << endl;
-    
+
     return 0;
 }
-

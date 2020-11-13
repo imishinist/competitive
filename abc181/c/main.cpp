@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <map>
 #include <cmath>
+#include <iostream>
+#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -24,7 +24,7 @@ int main() {
         cin >> p.first >> p.second;
         points[i] = p;
     }
-    
+
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             pair<int, int> v1 = calc_vector(points[i], points[j]);
@@ -38,6 +38,6 @@ int main() {
         }
     }
     puts("No");
-    
+
     return 0;
 }

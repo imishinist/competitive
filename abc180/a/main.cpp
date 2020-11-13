@@ -1,8 +1,8 @@
+#include <algorithm>
 #include <cstdio>
 #include <iostream>
-#include <vector>
 #include <map>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 

@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 const int INF = 0x3fffffff;
 
@@ -13,10 +13,8 @@ int main() {
     vector<int> H(n);
     vector<int> W(m);
 
-    for (int i = 0; i < n; i++)
-        cin >> H[i];
-    for (int i = 0; i < m; i++)
-        cin >> W[i];
+    for (int i = 0; i < n; i++) cin >> H[i];
+    for (int i = 0; i < m; i++) cin >> W[i];
 
     sort(H.begin(), H.end());
     sort(W.begin(), W.end());
@@ -26,8 +24,8 @@ int main() {
 
     for (int i = 0; i + 1 < n; i += 2) {
         int j = i + 1;
-        sum1[i / 2 + 1] = sum1[i / 2] + H[i+1] - H[i];
-        sum2[j / 2 + 1] = sum2[j / 2] + H[j+1] - H[j];
+        sum1[i / 2 + 1] = sum1[i / 2] + H[i + 1] - H[i];
+        sum2[j / 2 + 1] = sum2[j / 2] + H[j + 1] - H[j];
     }
 
     long long ans = 100000000000;
@@ -41,6 +39,6 @@ int main() {
         sum += sum1[idx / 2] + sum2[n / 2] - sum2[idx / 2];
         ans = min(ans, sum);
     }
-    printf("%lld\n", ans);    
+    printf("%lld\n", ans);
     return 0;
 }

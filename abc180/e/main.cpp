@@ -1,11 +1,11 @@
-#include <cstdio>
-#include <iostream>
-#include <vector>
-#include <map>
 #include <algorithm>
-#include <cstdlib>
 #include <cmath>
+#include <cstdio>
+#include <cstdlib>
 #include <cstring>
+#include <iostream>
+#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -29,11 +29,9 @@ int d[MAX_N][MAX_N];
 ll dp[1 << MAX_N][MAX_N];
 
 ll solve(int S, int v) {
-    if (dp[S][v] >= 0)
-        return dp[S][v];
+    if (dp[S][v] >= 0) return dp[S][v];
 
-    if (S == (1 << n) - 1 && v == 0)
-        return dp[S][v] = 0;
+    if (S == (1 << n) - 1 && v == 0) return dp[S][v] = 0;
 
     ll res = INF;
     for (int u = 0; u < n; u++) {

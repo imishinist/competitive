@@ -1,8 +1,8 @@
-#include <cstdio>
-#include <vector>
-#include <iostream>
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -29,9 +29,7 @@ void unite(int x, int y) {
     par[x] = y;
 }
 
-bool same(int x, int y) {
-    return find(x) == find(y);
-}
+bool same(int x, int y) { return find(x) == find(y); }
 
 // Startの直線とGoalの直線が同じ連結成分になったら通過できる
 // 小さい辺から順に接続させて同じ連結成分になれば,その時の

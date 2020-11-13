@@ -1,9 +1,9 @@
-#include <cstdio>
-#include <iostream>
-#include <vector>
-#include <map>
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -16,6 +16,6 @@ int main() {
     int a, b;
     cin >> a >> b;
 
-    cout << 2 * a  + 100 - b << endl;
+    cout << 2 * a + 100 - b << endl;
     return 0;
 }

@@ -1,8 +1,8 @@
+#include <algorithm>
 #include <cstdio>
 #include <iostream>
-#include <vector>
 #include <map>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -17,7 +17,7 @@ int main() {
     cin >> x >> y >> a >> b;
 
     ll ans = 0;
-    while ((double) a*x <= 2e18) {
+    while ((double)a * x <= 2e18) {
         if (a * x >= y || a * x > x + b) {
             break;
         }
