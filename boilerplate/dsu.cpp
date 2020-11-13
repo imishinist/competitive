@@ -23,6 +23,4 @@ void unite(int x, int y) {
     par[x] = y;
 }
 
-bool same(int x, int y) {
-    return find(x) == find(y);
-}
+bool same(int x, int y) { return find(x) == find(y); }
