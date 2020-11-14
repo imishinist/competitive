@@ -3,7 +3,7 @@
 https://atcoder.jp/contests/dp
 
 - [x] [A](https://atcoder.jp/contests/dp/tasks/dp_a)
-- [ ] [B](https://atcoder.jp/contests/dp/tasks/dp_b)
+- [x] [B](https://atcoder.jp/contests/dp/tasks/dp_b)
 - [ ] [C](https://atcoder.jp/contests/dp/tasks/dp_c)
 - [ ] [D](https://atcoder.jp/contests/dp/tasks/dp_d)
 - [ ] [E](https://atcoder.jp/contests/dp/tasks/dp_e)
