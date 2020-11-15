@@ -9,7 +9,7 @@ https://atcoder.jp/contests/dp
 - [x] [E](https://atcoder.jp/contests/dp/tasks/dp_e)
 - [ ] [F](https://atcoder.jp/contests/dp/tasks/dp_f)
 - [ ] [G](https://atcoder.jp/contests/dp/tasks/dp_g)
-- [ ] [H](https://atcoder.jp/contests/dp/tasks/dp_h)
+- [x] [H](https://atcoder.jp/contests/dp/tasks/dp_h)
 - [ ] [I](https://atcoder.jp/contests/dp/tasks/dp_i)
 - [ ] [J](https://atcoder.jp/contests/dp/tasks/dp_j)
 - [ ] [K](https://atcoder.jp/contests/dp/tasks/dp_k)
