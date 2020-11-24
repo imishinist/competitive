@@ -34,8 +34,8 @@ int dfs(int node) {
 
 int main() {
     cin >> n >> m;
-    
-    dp.resize(n+1);
+
+    dp.resize(n + 1);
     edges.resize(n);
     for (int i = 0; i < m; i++) {
         int x, y;
@@ -48,6 +48,6 @@ int main() {
         ans = max(ans, dfs(i));
     }
     cout << ans << endl;
-    
+
     return 0;
 }

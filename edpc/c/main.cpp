@@ -1,9 +1,9 @@
 #include <algorithm>
-#include <tuple>
 #include <cmath>
 #include <cstdio>
 #include <iostream>
 #include <map>
+#include <tuple>
 #include <vector>
 
 using namespace std;
@@ -33,14 +33,14 @@ int main() {
             // k: i日に何を選ぶか
             for (int k = 0; k < 3; k++) {
                 if (j == k) continue;
-                dp[i][k] = max(dp[i][k], dp[i-1][j] + costs[i][k]);
+                dp[i][k] = max(dp[i][k], dp[i - 1][j] + costs[i][k]);
             }
         }
     }
 
     int ans = 0;
     for (int i = 0; i < 3; i++) {
-        ans = max(ans, dp[n-1][i]);
+        ans = max(ans, dp[n - 1][i]);
     }
     cout << ans << endl;
 

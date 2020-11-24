@@ -20,14 +20,14 @@ int main() {
         items[i] = make_pair(w, v);
     }
 
-    vector<vector<ll>> dp(n+1, vector<ll>(w+1));
+    vector<vector<ll>> dp(n + 1, vector<ll>(w + 1));
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= w; j++) {
             auto wi = items[i].first, vi = items[i].second;
             if (j < wi) {
-                dp[i+1][j] = dp[i][j];
+                dp[i + 1][j] = dp[i][j];
             } else {
-                dp[i+1][j] = max(dp[i][j], dp[i][j-wi]+vi);
+                dp[i + 1][j] = max(dp[i][j], dp[i][j - wi] + vi);
             }
         }
     }

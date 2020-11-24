@@ -1,10 +1,10 @@
 #include <algorithm>
 #include <cmath>
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <map>
 #include <vector>
-#include <cstdint>
 
 template <std::uint_fast64_t Modulus>
 class modint {
@@ -79,21 +79,25 @@ int main() {
     vector<vector<mint>> dp(h, vector<mint>(w));
     dp[0][0] = 1;
     for (int i = 1; i < h; i++) {
-        if (fields[i][0] == '#') dp[i][0] = 0;
-        else dp[i][0] = dp[i-1][0];
+        if (fields[i][0] == '#')
+            dp[i][0] = 0;
+        else
+            dp[i][0] = dp[i - 1][0];
     }
     for (int i = 1; i < w; i++) {
-        if (fields[0][i] == '#') dp[0][i] = 0;
-        else dp[0][i] = dp[0][i-1];
+        if (fields[0][i] == '#')
+            dp[0][i] = 0;
+        else
+            dp[0][i] = dp[0][i - 1];
     }
 
     for (int i = 1; i < h; i++) {
         for (int j = 1; j < w; j++) {
             if (fields[i][j] == '#') continue;
-            dp[i][j] += dp[i-1][j] + dp[i][j-1];
+            dp[i][j] += dp[i - 1][j] + dp[i][j - 1];
         }
     }
-    cout << dp[h-1][w-1].value() << endl;
+    cout << dp[h - 1][w - 1].value() << endl;
 
     return 0;
 }

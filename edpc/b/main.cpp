@@ -27,10 +27,10 @@ int main() {
     for (int i = 1; i < n; i++) {
         for (int j = 1; j <= k; j++) {
             if (i - j < 0) continue;
-            dp[i] = min(dp[i], dp[i-j] + abs(h[i] - h[i-j]));
+            dp[i] = min(dp[i], dp[i - j] + abs(h[i] - h[i - j]));
         }
     }
-    cout << dp[n-1] << endl;
+    cout << dp[n - 1] << endl;
 
     // type here.
     return 0;
