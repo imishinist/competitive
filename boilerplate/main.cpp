@@ -17,9 +17,12 @@
 #include <ctime>
 #include <cstdio>
 #include <cassert>
+#include <atcoder/all>
+#include <iomanip>
+
 using namespace std;
 
-typedef long long ll;
+using ll = long long;
 
 #define rep(i,n) for (int (i) = 0; (i) < (n); (i)++)
 #define reps(i,ini,n) for (int (i) = (ini); (i) < (n); (i)++)
@@ -28,7 +31,7 @@ typedef long long ll;
 #define eps 1e-14
 
 {% if mod %}
-const long long MOD = {{ mod }};
+using mint = atcoder::modint{{ mod }};
 {% endif %}
 {% if yes_str %}
 const string YES = "{{ yes_str }}";
